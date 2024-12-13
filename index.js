@@ -20,3 +20,19 @@ function removeDuplicates(arr) {
     return [...new Set(arr)];
   }
   console.log(removeDuplicates([5, 5, 5, 6, 7]));
+
+
+//   4) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string. 
+console.log("Answer To the Question NO:04")
+
+function countVowels(str) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for (let char of str) {
+      if (vowels.includes(char)) {
+        count++;
+      }
+    }
+    return count;
+  }
+  console.log(countVowels("Your Name")); // Output: 4
