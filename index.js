@@ -14,3 +14,9 @@ function reverseString(str) {
 console.log(reverseString("hello"));
 
 
+// 3) Write a function removeDuplicates(arr) that takes an array and returns a new array with only unique values (duplicates removed). Ex: removeDuplicates([5, 5, 5, 6, 7]); // Output: [5, 6, 7]
+console.log("Answer To the Question NO:03")
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+  }
+  console.log(removeDuplicates([5, 5, 5, 6, 7]));
