@@ -5,3 +5,12 @@ for (let i = 1; i <= 20; i++) {
       console.log(i);
     }
   }
+
+// 2)  Write a function reverseString(str) that takes a string and returns it reversed. Ex: reverseString("hello"); // Output: "olleh"
+console.log("Answer To the Question NO:02")
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+console.log(reverseString("hello"));
+
+
