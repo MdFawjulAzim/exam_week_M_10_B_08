@@ -17,12 +17,18 @@ console.log(reverseString("hello"));
 // 3) Write a function removeDuplicates(arr) that takes an array and returns a new array with only unique values (duplicates removed). Ex: removeDuplicates([5, 5, 5, 6, 7]); // Output: [5, 6, 7]
 console.log("Answer To the Question NO:03")
 function removeDuplicates(arr) {
-    return [...new Set(arr)];
+    let uniqueArray = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (!uniqueArray.includes(arr[i])) {
+        uniqueArray.push(arr[i]);
+      }
+    }
+    return uniqueArray;
   }
-  console.log(removeDuplicates([5, 5, 5, 6, 7]));
+  console.log(removeDuplicates([5, 5, 5, 6, 7])); 
 
 
-//   4) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string. 
+//4) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string. 
 console.log("Answer To the Question NO:04")
 
 function countVowels(str) {
@@ -35,4 +41,4 @@ function countVowels(str) {
     }
     return count;
   }
-  console.log(countVowels("Your Name")); // Output: 4
+  console.log(countVowels("Md. Fawjul Azim"));
